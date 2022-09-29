@@ -11,7 +11,7 @@ export const shazamCoreApi = createApi({
         }
     }),
     endpoints: (buidler) => ({
-        getTopCharts: buidler.query({ query: '/charts/world'})
+        getTopCharts: buidler.query({ query: () => '/charts/world'})
     })
 });
 
